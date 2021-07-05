@@ -10,5 +10,5 @@ MapReduce Task 3, CovidStatistics (data.csv)
 
 MapReduce Task 4, MoviesKindCounter (movies.txt)
 
-Instructions on how to setup Apache Hadoop 3.2.2 and HDFS in single cluster node.
+Instructions on how to setup Apache Hadoop 3.2.2 and HDFS in a single cluster node.
 https://hadoop.apache.org/docs/r3.2.2/hadoop-project-dist/hadoop-common/SingleCluster.html
