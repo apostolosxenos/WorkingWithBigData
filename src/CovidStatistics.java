@@ -162,7 +162,7 @@ public class CovidStatistics {
         // Second MapReduce Round -> Above mean
         Job secondJob = Job.getInstance(conf);
         secondJob.setJobName("above mean count");
-        secondJob.setJarByClass(Ypoergasia3.class);
+        secondJob.setJarByClass(CovidStatistics.class);
         secondJob.setMapperClass(AboveMeanCasesMapper.class);
         secondJob.setReducerClass(IntSumReducer.class);
         secondJob.setOutputKeyClass(Text.class);

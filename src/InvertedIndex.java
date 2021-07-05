@@ -70,7 +70,7 @@ public class InvertedIndex {
         Configuration conf = new Configuration();
         conf.setInt("N", Integer.parseInt(args[2]));
         Job job = Job.getInstance(conf, "inverted-index");
-        job.setJarByClass(Ypoergasia2.class);
+        job.setJarByClass(InvertedIndex.class);
         job.setMapperClass(WordMapper.class);
         job.setReducerClass(WordFileNameSumReducer.class);
         job.setOutputKeyClass(Text.class);

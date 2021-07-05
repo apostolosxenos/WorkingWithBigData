@@ -72,7 +72,7 @@ public class MoviesKindCounter {
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "pair of movie kinds count");
-        job.setJarByClass(Ypoergasia4.class);
+        job.setJarByClass(MoviesKindCounter.class);
         job.setMapperClass(PairMapper.class);
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);

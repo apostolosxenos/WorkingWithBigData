@@ -95,7 +95,7 @@ public class NgramCounter {
         conf.setInt("N", Integer.parseInt(args[2]));
         conf.setInt("K", Integer.parseInt(args[3]));
         Job job = Job.getInstance(conf, "n-gram count");
-        job.setJarByClass(Ypoergasia1.class);
+        job.setJarByClass(NgramCounter.class);
         job.setMapperClass(TokenizerMapper.class);
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
